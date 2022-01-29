@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/img/wedding-ring.png" rel="shortcut icon">
+    <title>Wedding Mira Hermanika S.I.P & Ceceng Ramdani S.I.Kom</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css?v2.8">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <audio id="backsound" autoplay loop>
+        <source src="assets/audio/ada-untukmu.mp3" type="audio/mp3">
+    </audio>
+    </head>
+
+    <body>
+
+        <nav class="nav">
+            <a href="index.html" class="nav__link">
+                <i class="material-icons nav__icon">email</i>
+                <span class="nav__text">Home</span>
+            </a>
+            <a href="mempelai.html" class="nav__link">
+                <i class="material-icons nav__icon">supervised_user_circle</i>
+                <span class="nav__text">Mempelai</span>
+            </a>
+            <a href="acara.html" class="nav__link">
+                <i class="material-icons nav__icon">event_note</i>
+                <span class="nav__text">Acara</span>
+            </a>
+            <a href="tempat.html" class="nav__link">
+                <i class="material-icons nav__icon">location_on</i>
+                <span class="nav__text">Tempat</span>
+            </a>
+            <a href="galery.html" class="nav__link nav__link--active">
+                <i class="material-icons nav__icon">image</i>
+                <span class="nav__text">Galery</span>
+            </a>
+            <!-- <a href="#" class="nav__link sound">
+                <i class="material-icons nav__icon" id="icon_music">music_note</i>
+                <span class="nav__text">Musik</span>
+            </a> -->
+        </nav>
+
+        <div class="container">
+            <img src="assets/img/kanan.png" class="img-kanan" alt="">
+            <img src="assets/img/kiri.png" class="img-kiri" alt="">
+
+            <div style="max-height: fit-content !important;" class="container-galery">
+                <div class="judul mt-2">
+                    <div class="row">
+                        <div class="col-6 d-flex align-items-center">
+                            <h3 class="ml-3 tempat-judul" style="text-align: left;">Galery</h3>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <img class="img-fluid" src="assets/img/galery/image (1).jpeg">
+                <img class="img-fluid mt-1" src="assets/img/galery/image (2).jpeg">
+                <img class="img-fluid mt-1" src="assets/img/galery/image (3).jpeg">
+                <img class="img-fluid mt-1" src="assets/img/galery/image (4).jpeg">
+                <img class="img-fluid mt-1" src="assets/img/galery/image (5).jpeg">
+                <img class="img-fluid mt-1" src="assets/img/galery/image (6).jpeg">
+                <img class="img-fluid mt-1" src="assets/img/galery/image (7).jpeg">
+                <img class="img-fluid mt-1" src="assets/img/galery/image (8).jpeg">
+                <img class="img-fluid mt-1" src="assets/img/galery/image (9).jpeg">
+                <img class="img-fluid mt-1" src="assets/img/galery/image (10).jpeg">
+                <img class="img-fluid mt-1" src="assets/img/galery/image (11).jpeg">
+            </div>
+        </div>
+
+        <button class="modal-safety" data-toggle="modal" data-target="#safety">
+            <div class="safety-card">
+                <span class="material-icons">
+                    health_and_safety
+                </span>
+            </div>
+        </button>
+
+        <button class="modal-music">
+            <div class="music-card">
+                <span class="material-icons sound"  id="icon_music">
+                    music_note
+                </span>
+            </div>
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="safety" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">To our dearest guest</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="text-center text-color">
+                                use health protocol such as
+                                <div class="row text-color">
+                                    <div class="col-6 col-md-3 mt-3">
+                                        <img src="assets/img/safety/protection-mask.png" alt="" class="img-fluid" >
+                                        Wear Mask
+                                    </div>
+                                    <div class="col-6 col-md-3 mt-3">
+                                        <img src="assets/img/safety/soap.png" alt="" class="img-fluid" >
+                                        Wash Your Hand
+                                    </div>
+                                    <div class="col-6 col-md-3 mt-3">
+                                        <img src="assets/img/safety/disinfectant.png" alt="" class="img-fluid" >
+                                        Bring Antiseptic
+                                    </div>
+                                    <div class="col-6 col-md-3 mt-3">
+                                        <img src="assets/img/safety/social.png" alt="" class="img-fluid" >
+                                        social Distancing
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- salju -->
+        <div class='snow-flakes'>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+        <script type="text/javascript">
+            var myAudio = document.getElementById("backsound");
+            var isPlaying = false;
+
+            $(".modal-music").on("click", function () {
+                isPlaying ? myAudio.pause() : myAudio.play();
+            })
+
+            myAudio.onplaying = function () {
+                isPlaying = true;
+                document.getElementById("icon_music").innerHTML = "music_note";
+            };
+
+            myAudio.onpause = function () {
+                isPlaying = false;
+                document.getElementById("icon_music").innerHTML = "music_off";
+            };
+
+        </script>
+    </body>
+
+</html>

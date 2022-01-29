@@ -1,0 +1,1488 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Quicksand:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
+body {
+  /* background: #efe7df; */
+  background: #211F2F;
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+/* menu */
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  /* box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); */
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  overflow-x: auto;
+  backdrop-filter: blur(5px);
+  z-index: 2;
+}
+
+.nav__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  min-width: 70px;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: sans-serif;
+  font-size: 13px;
+  color: #B8860B;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color 0.1s ease-in-out;
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  background-color: #B8860B;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav__link--active {
+  background-color: #B8860B;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav__icon {
+  font-size: 18px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  max-width: 100%;
+  flex-wrap: wrap;
+  z-index: 1;
+  padding-bottom: 690px !important;
+}
+
+/* music */
+
+.modal-music {
+  position: fixed;
+  background: none;
+  color: inherit;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  z-index: 99999;
+  width: 50px;
+  height: 50px;
+  bottom: 70px;
+  right: 75px;
+  color: #B8860B;
+}
+
+.modal-music:hover span {
+  font-weight: bold;
+}
+
+.music-card {
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  padding-top: 0.6em;
+}
+
+/* safety */
+
+.modal-safety {
+  position: fixed;
+  background: none;
+  color: inherit;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  z-index: 99999;
+  width: 50px;
+  height: 50px;
+  bottom: 70px;
+  right: 15px;
+  color: #B8860B;
+}
+
+.modal-safety:hover span {
+  font-weight: bold;
+}
+
+.modal-safety :active {
+  font-weight: bold;
+  border: none;
+}
+
+.safety-card {
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  padding-top: 0.6em;
+}
+
+.modal-title {
+  color: #B8860B;
+}
+
+.text-color {
+  color: #B8860B;
+}
+/* home page */
+
+.container .img-home-nama-kartu-background {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  /* min-height: 60%; */
+}
+
+.container .kartu-nama {
+  top: 235px;
+  right: 10px;
+  position: relative;
+  width: 300px;
+  height: 200px;
+  -webkit-box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.container .kartu-nama .nama {
+  padding-top: 20px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.container .kartu-nama .nama h5 {
+  margin-top: 20px;
+  color: #B8860B;
+  z-index: 1;
+}
+
+.container .kartu-nama .nama h4 {
+  font-family: "Dancing Script", cursive;
+  color: #B8860B;
+  z-index: 1;
+}
+
+.bunga-bawah {
+  position: absolute;
+  bottom: 0;
+  left: 16%;
+  z-index: -999;
+}
+
+/* page mempelai */
+
+
+.img-kanan {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+.img-kiri {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.container-mempelai {
+  position: relative;
+  margin-top: 60px;
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  padding: 0;
+}
+
+.text-atas {
+  text-align: center;
+  color: #B8860B;
+}
+
+.nama-mempelai {
+  font-family: "Dancing Script", cursive !important;
+  font-size: 1.6rem !important;
+}
+
+.text-atas .bismillah {
+  font-family: "Dancing Script", cursive;
+}
+
+.container-mempelai .data-mempelai {
+  margin: 30px;
+  text-align: center;
+  /* background-color: aqua; */
+}
+
+.container-mempelai .data-mempelai .ket-mempelai {
+  color: #B8860B;
+}
+
+.img-mempelai {
+  width: 50%;
+}
+
+.text-dengan {
+  margin: 0 auto;
+  font-family: "Dancing Script", cursive;
+  color: #B8860B;
+}
+
+.text-dengan {
+  margin-bottom: 70px;
+}
+
+/* acara */
+.container-acara {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.card-acara {
+  -webkit-box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  padding: 0;
+}
+
+.text-judul-acara h1 {
+  z-index: 9;
+}
+
+.text-judul-acara h1 {
+  font-family: "Dancing Script", cursive;
+  color: #B8860B;
+  margin-top: 60px;
+  z-index: 9;
+}
+
+.judul-card-acara {
+  color: #B8860B;
+  margin-top: 5px;
+}
+
+.judul-card-acara-detail {
+  color: #B8860B;
+}
+
+.card-acara h5 {
+  color: #B8860B;
+}
+
+.acara-detail {
+  margin: auto;
+  max-width: 84%;
+}
+
+.acara-detail td {
+  color: #B8860B;
+  text-align: left;
+  vertical-align: top;
+}
+
+/* page tempat */
+
+.container-tempat {
+  position: relative;
+  width: 100%;
+  margin-top: 60px;
+  -webkit-box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  padding: 0;
+}
+/* page galery */
+
+.tempat-judul {
+  color: #B8860B;
+}
+
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+  z-index: 99;
+}
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+  /* home */
+  .container .img-home-nama-kartu-background {
+    top: 305px;
+    height: 50%;
+  }
+
+  .container .kartu-nama {
+    width: 300px;
+    height: 180px;
+    position: relative;
+    margin: 0;
+  }
+
+  .container .kartu-nama .nama {
+    padding: 10px;
+    text-align: center;
+    transition: 0.5s;
+  }
+
+  .container .kartu-nama .nama h5 {
+    font-size: 1.4rem;
+    color: #B8860B;
+    z-index: 1;
+    margin-top: 15px;
+  }
+
+  /* page mempelai  */
+  .container-mempelai {
+    margin-top: 1rem;
+  }
+
+  .text-atas .bismillah {
+    font-size: 1.6rem;
+    margin-top: 5px;
+  }
+
+  .text-atas h6 {
+    font-size: 0.8rem;
+  }
+
+  .container-mempelai .data-mempelai {
+    margin: 10px;
+    text-align: center;
+    /* background-color: aqua; */
+  }
+
+  .nama-mempelai {
+    font-family: "Dancing Script", cursive !important;
+    font-size: 1.6rem !important;
+  }
+
+  .container-mempelai .data-mempelai .ket-mempelai h5 {
+    font-size: 0.9rem;
+  }
+
+  .container-mempelai .data-mempelai .ket-mempelai h6 {
+    font-size: 0.8rem;
+  }
+
+  .img-mempelai {
+    width: 40%;
+  }
+
+  .text-dengan {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+  /* page acara */
+  .container-acara {
+    margin-top: 10px;
+  }
+  .akad {
+    margin-top: 20px;
+  }
+
+  .text-judul-acara h1 {
+    margin-top: 0.3rem;
+    font-size: 1.8rem;
+  }
+
+  .data-mempelai {
+    margin-top: 0px;
+  }
+
+  .judul-card-acara {
+    font-size: 1.3rem;
+  }
+
+  .judul-card-acara-detail {
+    font-size: 0.9rem;
+  }
+
+  /* page tampat */
+  .container-tempat {
+    margin-top: 1rem;
+  }
+}
+
+.container-galery {
+  /* position: relative; */
+  width: 100%;
+  height: fit-content !important;
+  margin-top: 40px;
+  -webkit-box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.5);
+  /* overflow: hidden; */
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  padding: 0;
+}
+
+/* salju */
+/* Snowfall Animation */
+.snow-flakes {
+  z-index: -99;
+}
+.flake {
+  background-color: #fff;
+  border-radius: 95%;
+  position: absolute;
+  top: -10vh;
+  padding: 1vw;
+}
+.flake:nth-child(1) {
+  animation: snow 19s linear 40s infinite normal backwards;
+  left: 79%;
+  opacity: 0.71;
+  padding: 0.11vw;
+}
+.flake:nth-child(2) {
+  animation: snow 19s linear 10s infinite normal backwards;
+  left: 57%;
+  opacity: 1.1;
+  padding: 0.34vw;
+}
+.flake:nth-child(3) {
+  animation: snow 14s linear 15s infinite normal backwards;
+  left: 10%;
+  opacity: 0.82;
+  padding: 0.12vw;
+}
+.flake:nth-child(4) {
+  animation: snow 14s linear 30s infinite normal backwards;
+  left: 90%;
+  opacity: 0.32;
+  padding: 0.28vw;
+}
+.flake:nth-child(5) {
+  animation: snow 12s linear 8s infinite normal backwards;
+  left: 54%;
+  opacity: 0.48;
+  padding: 0.41vw;
+}
+.flake:nth-child(6) {
+  animation: snow 16s linear 30s infinite normal backwards;
+  left: 20%;
+  opacity: 0.64;
+  padding: 0.28vw;
+}
+.flake:nth-child(7) {
+  animation: snow 12s linear 36s infinite normal backwards;
+  left: 20%;
+  opacity: 0.28;
+  padding: 0.34vw;
+}
+.flake:nth-child(8) {
+  animation: snow 13s linear 3s infinite normal backwards;
+  left: 62%;
+  opacity: 0.55;
+  padding: 0.14vw;
+}
+.flake:nth-child(9) {
+  animation: snow 18s linear 44s infinite normal backwards;
+  left: 65%;
+  opacity: 0.6;
+  padding: 0.32vw;
+}
+.flake:nth-child(10) {
+  animation: snow 16s linear 32s infinite normal backwards;
+  left: 90%;
+  opacity: 0.55;
+  padding: 0.18vw;
+}
+.flake:nth-child(11) {
+  animation: snow 14s linear 50s infinite normal backwards;
+  left: 6%;
+  opacity: 0.98;
+  padding: 0.39vw;
+}
+.flake:nth-child(12) {
+  animation: snow 11s linear 22s infinite normal backwards;
+  left: 93%;
+  opacity: 0.51;
+  padding: 0.2vw;
+}
+.flake:nth-child(13) {
+  animation: snow 13s linear 8s infinite normal backwards;
+  left: 61%;
+  opacity: 0.21;
+  padding: 0.47vw;
+}
+.flake:nth-child(14) {
+  animation: snow 15s linear 43s infinite normal backwards;
+  left: 19%;
+  opacity: 0.46;
+  padding: 0.25vw;
+}
+.flake:nth-child(15) {
+  animation: snow 11s linear 13s infinite normal backwards;
+  left: 94%;
+  opacity: 0.83;
+  padding: 0.29vw;
+}
+.flake:nth-child(16) {
+  animation: snow 19s linear 15s infinite normal backwards;
+  left: 92%;
+  opacity: 0.83;
+  padding: 0.28vw;
+}
+.flake:nth-child(17) {
+  animation: snow 19s linear 30s infinite normal backwards;
+  left: 14%;
+  opacity: 0.3;
+  padding: 0.36vw;
+}
+.flake:nth-child(18) {
+  animation: snow 20s linear 41s infinite normal backwards;
+  left: 46%;
+  opacity: 1.07;
+  padding: 0.16vw;
+}
+.flake:nth-child(19) {
+  animation: snow 15s linear 7s infinite normal backwards;
+  left: 46%;
+  opacity: 1.03;
+  padding: 0.29vw;
+}
+.flake:nth-child(20) {
+  animation: snow 14s linear 7s infinite normal backwards;
+  left: 40%;
+  opacity: 1.08;
+  padding: 0.13vw;
+}
+.flake:nth-child(21) {
+  animation: snow 16s linear 18s infinite normal backwards;
+  left: 10%;
+  opacity: 0.29;
+  padding: 0.46vw;
+}
+.flake:nth-child(22) {
+  animation: snow 16s linear 3s infinite normal backwards;
+  left: 35%;
+  opacity: 0.64;
+  padding: 0.25vw;
+}
+.flake:nth-child(23) {
+  animation: snow 19s linear 45s infinite normal backwards;
+  left: 9%;
+  opacity: 0.39;
+  padding: 0.3vw;
+}
+.flake:nth-child(24) {
+  animation: snow 17s linear 40s infinite normal backwards;
+  left: 73%;
+  opacity: 0.4;
+  padding: 0.2vw;
+}
+.flake:nth-child(25) {
+  animation: snow 13s linear 10s infinite normal backwards;
+  left: 78%;
+  opacity: 0.4;
+  padding: 0.28vw;
+}
+.flake:nth-child(26) {
+  animation: snow 20s linear 6s infinite normal backwards;
+  left: 23%;
+  opacity: 0.77;
+  padding: 0.44vw;
+}
+.flake:nth-child(27) {
+  animation: snow 14s linear 17s infinite normal backwards;
+  left: 46%;
+  opacity: 0.36;
+  padding: 0.11vw;
+}
+.flake:nth-child(28) {
+  animation: snow 15s linear 14s infinite normal backwards;
+  left: 35%;
+  opacity: 0.85;
+  padding: 0.31vw;
+}
+.flake:nth-child(29) {
+  animation: snow 16s linear 47s infinite normal backwards;
+  left: 59%;
+  opacity: 0.85;
+  padding: 0.29vw;
+}
+.flake:nth-child(30) {
+  animation: snow 11s linear 48s infinite normal backwards;
+  left: 93%;
+  opacity: 0.51;
+  padding: 0.26vw;
+}
+.flake:nth-child(31) {
+  animation: snow 20s linear 7s infinite normal backwards;
+  left: 93%;
+  opacity: 0.15;
+  padding: 0.39vw;
+}
+.flake:nth-child(32) {
+  animation: snow 19s linear 44s infinite normal backwards;
+  left: 34%;
+  opacity: 0.54;
+  padding: 0.37vw;
+}
+.flake:nth-child(33) {
+  animation: snow 11s linear 8s infinite normal backwards;
+  left: 14%;
+  opacity: 1.1;
+  padding: 0.37vw;
+}
+.flake:nth-child(34) {
+  animation: snow 14s linear 28s infinite normal backwards;
+  left: 34%;
+  opacity: 0.36;
+  padding: 0.5vw;
+}
+.flake:nth-child(35) {
+  animation: snow 16s linear 21s infinite normal backwards;
+  left: 87%;
+  opacity: 0.72;
+  padding: 0.19vw;
+}
+.flake:nth-child(36) {
+  animation: snow 17s linear 18s infinite normal backwards;
+  left: 58%;
+  opacity: 0.48;
+  padding: 0.34vw;
+}
+.flake:nth-child(37) {
+  animation: snow 11s linear 49s infinite normal backwards;
+  left: 35%;
+  opacity: 0.42;
+  padding: 0.48vw;
+}
+.flake:nth-child(38) {
+  animation: snow 13s linear 29s infinite normal backwards;
+  left: 8%;
+  opacity: 0.96;
+  padding: 0.5vw;
+}
+.flake:nth-child(39) {
+  animation: snow 15s linear 43s infinite normal backwards;
+  left: 36%;
+  opacity: 0.41;
+  padding: 0.24vw;
+}
+.flake:nth-child(40) {
+  animation: snow 13s linear 46s infinite normal backwards;
+  left: 18%;
+  opacity: 0.13;
+  padding: 0.15vw;
+}
+.flake:nth-child(41) {
+  animation: snow 14s linear 22s infinite normal backwards;
+  left: 34%;
+  opacity: 0.86;
+  padding: 0.46vw;
+}
+.flake:nth-child(42) {
+  animation: snow 19s linear 3s infinite normal backwards;
+  left: 66%;
+  opacity: 0.82;
+  padding: 0.11vw;
+}
+.flake:nth-child(43) {
+  animation: snow 15s linear 46s infinite normal backwards;
+  left: 75%;
+  opacity: 0.69;
+  padding: 0.26vw;
+}
+.flake:nth-child(44) {
+  animation: snow 14s linear 12s infinite normal backwards;
+  left: 55%;
+  opacity: 0.33;
+  padding: 0.39vw;
+}
+.flake:nth-child(45) {
+  animation: snow 16s linear 33s infinite normal backwards;
+  left: 90%;
+  opacity: 0.19;
+  padding: 0.47vw;
+}
+.flake:nth-child(46) {
+  animation: snow 16s linear 15s infinite normal backwards;
+  left: 72%;
+  opacity: 0.2;
+  padding: 0.48vw;
+}
+.flake:nth-child(47) {
+  animation: snow 16s linear 8s infinite normal backwards;
+  left: 61%;
+  opacity: 0.39;
+  padding: 0.49vw;
+}
+.flake:nth-child(48) {
+  animation: snow 12s linear 21s infinite normal backwards;
+  left: 15%;
+  opacity: 0.29;
+  padding: 0.42vw;
+}
+.flake:nth-child(49) {
+  animation: snow 17s linear 26s infinite normal backwards;
+  left: 16%;
+  opacity: 0.52;
+  padding: 0.45vw;
+}
+.flake:nth-child(50) {
+  animation: snow 11s linear 42s infinite normal backwards;
+  left: 67%;
+  opacity: 1.01;
+  padding: 0.16vw;
+}
+.flake:nth-child(51) {
+  animation: snow 11s linear 29s infinite normal backwards;
+  left: 58%;
+  opacity: 0.16;
+  padding: 0.3vw;
+}
+.flake:nth-child(52) {
+  animation: snow 14s linear 33s infinite normal backwards;
+  left: 85%;
+  opacity: 1.04;
+  padding: 0.2vw;
+}
+.flake:nth-child(53) {
+  animation: snow 14s linear 10s infinite normal backwards;
+  left: 15%;
+  opacity: 0.92;
+  padding: 0.35vw;
+}
+.flake:nth-child(54) {
+  animation: snow 17s linear 44s infinite normal backwards;
+  left: 88%;
+  opacity: 0.29;
+  padding: 0.25vw;
+}
+.flake:nth-child(55) {
+  animation: snow 17s linear 20s infinite normal backwards;
+  left: 55%;
+  opacity: 0.27;
+  padding: 0.26vw;
+}
+.flake:nth-child(56) {
+  animation: snow 15s linear 27s infinite normal backwards;
+  left: 92%;
+  opacity: 0.99;
+  padding: 0.33vw;
+}
+.flake:nth-child(57) {
+  animation: snow 13s linear 31s infinite normal backwards;
+  left: 72%;
+  opacity: 1.1;
+  padding: 0.13vw;
+}
+.flake:nth-child(58) {
+  animation: snow 11s linear 6s infinite normal backwards;
+  left: 69%;
+  opacity: 0.99;
+  padding: 0.15vw;
+}
+.flake:nth-child(59) {
+  animation: snow 11s linear 23s infinite normal backwards;
+  left: 46%;
+  opacity: 0.9;
+  padding: 0.19vw;
+}
+.flake:nth-child(60) {
+  animation: snow 19s linear 16s infinite normal backwards;
+  left: 34%;
+  opacity: 1.08;
+  padding: 0.15vw;
+}
+.flake:nth-child(61) {
+  animation: snow 17s linear 21s infinite normal backwards;
+  left: 9%;
+  opacity: 1.04;
+  padding: 0.43vw;
+}
+.flake:nth-child(62) {
+  animation: snow 18s linear 3s infinite normal backwards;
+  left: 80%;
+  opacity: 0.26;
+  padding: 0.16vw;
+}
+.flake:nth-child(63) {
+  animation: snow 12s linear 34s infinite normal backwards;
+  left: 19%;
+  opacity: 0.9;
+  padding: 0.36vw;
+}
+.flake:nth-child(64) {
+  animation: snow 17s linear 7s infinite normal backwards;
+  left: 69%;
+  opacity: 0.63;
+  padding: 0.29vw;
+}
+.flake:nth-child(65) {
+  animation: snow 15s linear 36s infinite normal backwards;
+  left: 20%;
+  opacity: 0.16;
+  padding: 0.49vw;
+}
+.flake:nth-child(66) {
+  animation: snow 12s linear 6s infinite normal backwards;
+  left: 29%;
+  opacity: 0.81;
+  padding: 0.45vw;
+}
+.flake:nth-child(67) {
+  animation: snow 14s linear 22s infinite normal backwards;
+  left: 7%;
+  opacity: 0.69;
+  padding: 0.47vw;
+}
+.flake:nth-child(68) {
+  animation: snow 16s linear 41s infinite normal backwards;
+  left: 8%;
+  opacity: 0.44;
+  padding: 0.2vw;
+}
+.flake:nth-child(69) {
+  animation: snow 18s linear 5s infinite normal backwards;
+  left: 14%;
+  opacity: 0.79;
+  padding: 0.22vw;
+}
+.flake:nth-child(70) {
+  animation: snow 20s linear 12s infinite normal backwards;
+  left: 25%;
+  opacity: 0.23;
+  padding: 0.49vw;
+}
+.flake:nth-child(71) {
+  animation: snow 20s linear 32s infinite normal backwards;
+  left: 43%;
+  opacity: 0.65;
+  padding: 0.23vw;
+}
+.flake:nth-child(72) {
+  animation: snow 15s linear 3s infinite normal backwards;
+  left: 25%;
+  opacity: 0.42;
+  padding: 0.29vw;
+}
+.flake:nth-child(73) {
+  animation: snow 16s linear 20s infinite normal backwards;
+  left: 9%;
+  opacity: 1.01;
+  padding: 0.24vw;
+}
+.flake:nth-child(74) {
+  animation: snow 12s linear 26s infinite normal backwards;
+  left: 64%;
+  opacity: 0.55;
+  padding: 0.43vw;
+}
+.flake:nth-child(75) {
+  animation: snow 19s linear 17s infinite normal backwards;
+  left: 85%;
+  opacity: 1.08;
+  padding: 0.27vw;
+}
+.flake:nth-child(76) {
+  animation: snow 18s linear 3s infinite normal backwards;
+  left: 95%;
+  opacity: 0.63;
+  padding: 0.18vw;
+}
+.flake:nth-child(77) {
+  animation: snow 14s linear 19s infinite normal backwards;
+  left: 93%;
+  opacity: 0.35;
+  padding: 0.14vw;
+}
+.flake:nth-child(78) {
+  animation: snow 13s linear 3s infinite normal backwards;
+  left: 79%;
+  opacity: 0.25;
+  padding: 0.14vw;
+}
+.flake:nth-child(79) {
+  animation: snow 18s linear 28s infinite normal backwards;
+  left: 72%;
+  opacity: 0.49;
+  padding: 0.48vw;
+}
+.flake:nth-child(80) {
+  animation: snow 19s linear 3s infinite normal backwards;
+  left: 79%;
+  opacity: 0.19;
+  padding: 0.35vw;
+}
+.flake:nth-child(81) {
+  animation: snow 13s linear 48s infinite normal backwards;
+  left: 14%;
+  opacity: 0.66;
+  padding: 0.48vw;
+}
+.flake:nth-child(82) {
+  animation: snow 15s linear 1s infinite normal backwards;
+  left: 8%;
+  opacity: 0.72;
+  padding: 0.34vw;
+}
+.flake:nth-child(83) {
+  animation: snow 15s linear 36s infinite normal backwards;
+  left: 42%;
+  opacity: 1.08;
+  padding: 0.26vw;
+}
+.flake:nth-child(84) {
+  animation: snow 14s linear 15s infinite normal backwards;
+  left: 93%;
+  opacity: 0.41;
+  padding: 0.17vw;
+}
+.flake:nth-child(85) {
+  animation: snow 18s linear 20s infinite normal backwards;
+  left: 94%;
+  opacity: 0.86;
+  padding: 0.32vw;
+}
+.flake:nth-child(86) {
+  animation: snow 20s linear 14s infinite normal backwards;
+  left: 43%;
+  opacity: 0.27;
+  padding: 0.3vw;
+}
+.flake:nth-child(87) {
+  animation: snow 14s linear 44s infinite normal backwards;
+  left: 64%;
+  opacity: 0.83;
+  padding: 0.19vw;
+}
+.flake:nth-child(88) {
+  animation: snow 16s linear 24s infinite normal backwards;
+  left: 11%;
+  opacity: 0.83;
+  padding: 0.48vw;
+}
+.flake:nth-child(89) {
+  animation: snow 13s linear 24s infinite normal backwards;
+  left: 62%;
+  opacity: 0.26;
+  padding: 0.11vw;
+}
+.flake:nth-child(90) {
+  animation: snow 18s linear 44s infinite normal backwards;
+  left: 72%;
+  opacity: 0.92;
+  padding: 0.13vw;
+}
+.flake:nth-child(91) {
+  animation: snow 13s linear 20s infinite normal backwards;
+  left: 72%;
+  opacity: 0.71;
+  padding: 0.31vw;
+}
+.flake:nth-child(92) {
+  animation: snow 20s linear 14s infinite normal backwards;
+  left: 80%;
+  opacity: 0.69;
+  padding: 0.38vw;
+}
+.flake:nth-child(93) {
+  animation: snow 11s linear 21s infinite normal backwards;
+  left: 47%;
+  opacity: 1.01;
+  padding: 0.48vw;
+}
+.flake:nth-child(94) {
+  animation: snow 15s linear 35s infinite normal backwards;
+  left: 51%;
+  opacity: 0.85;
+  padding: 0.32vw;
+}
+.flake:nth-child(95) {
+  animation: snow 11s linear 47s infinite normal backwards;
+  left: 85%;
+  opacity: 0.97;
+  padding: 0.29vw;
+}
+.flake:nth-child(96) {
+  animation: snow 18s linear 37s infinite normal backwards;
+  left: 54%;
+  opacity: 0.25;
+  padding: 0.45vw;
+}
+.flake:nth-child(97) {
+  animation: snow 17s linear 39s infinite normal backwards;
+  left: 15%;
+  opacity: 0.35;
+  padding: 0.26vw;
+}
+.flake:nth-child(98) {
+  animation: snow 15s linear 5s infinite normal backwards;
+  left: 61%;
+  opacity: 0.37;
+  padding: 0.21vw;
+}
+.flake:nth-child(99) {
+  animation: snow 11s linear 2s infinite normal backwards;
+  left: 8%;
+  opacity: 0.32;
+  padding: 0.42vw;
+}
+.flake:nth-child(100) {
+  animation: snow 15s linear 19s infinite normal backwards;
+  left: 31%;
+  opacity: 0.85;
+  padding: 0.5vw;
+}
+.flake:nth-child(101) {
+  animation: snow 13s linear 14s infinite normal backwards;
+  left: 19%;
+  opacity: 0.62;
+  padding: 0.32vw;
+}
+.flake:nth-child(102) {
+  animation: snow 20s linear 42s infinite normal backwards;
+  left: 76%;
+  opacity: 0.87;
+  padding: 0.31vw;
+}
+.flake:nth-child(103) {
+  animation: snow 15s linear 41s infinite normal backwards;
+  left: 49%;
+  opacity: 0.37;
+  padding: 0.25vw;
+}
+.flake:nth-child(104) {
+  animation: snow 14s linear 42s infinite normal backwards;
+  left: 80%;
+  opacity: 0.91;
+  padding: 0.11vw;
+}
+.flake:nth-child(105) {
+  animation: snow 19s linear 48s infinite normal backwards;
+  left: 78%;
+  opacity: 0.99;
+  padding: 0.49vw;
+}
+.flake:nth-child(106) {
+  animation: snow 14s linear 11s infinite normal backwards;
+  left: 40%;
+  opacity: 1.09;
+  padding: 0.22vw;
+}
+.flake:nth-child(107) {
+  animation: snow 15s linear 42s infinite normal backwards;
+  left: 67%;
+  opacity: 1.07;
+  padding: 0.47vw;
+}
+.flake:nth-child(108) {
+  animation: snow 12s linear 28s infinite normal backwards;
+  left: 36%;
+  opacity: 0.58;
+  padding: 0.37vw;
+}
+.flake:nth-child(109) {
+  animation: snow 15s linear 33s infinite normal backwards;
+  left: 92%;
+  opacity: 0.68;
+  padding: 0.49vw;
+}
+.flake:nth-child(110) {
+  animation: snow 16s linear 5s infinite normal backwards;
+  left: 42%;
+  opacity: 0.47;
+  padding: 0.46vw;
+}
+.flake:nth-child(111) {
+  animation: snow 20s linear 24s infinite normal backwards;
+  left: 17%;
+  opacity: 0.62;
+  padding: 0.43vw;
+}
+.flake:nth-child(112) {
+  animation: snow 13s linear 1s infinite normal backwards;
+  left: 9%;
+  opacity: 0.55;
+  padding: 0.21vw;
+}
+.flake:nth-child(113) {
+  animation: snow 12s linear 22s infinite normal backwards;
+  left: 20%;
+  opacity: 0.33;
+  padding: 0.27vw;
+}
+.flake:nth-child(114) {
+  animation: snow 20s linear 36s infinite normal backwards;
+  left: 16%;
+  opacity: 0.28;
+  padding: 0.12vw;
+}
+.flake:nth-child(115) {
+  animation: snow 15s linear 6s infinite normal backwards;
+  left: 39%;
+  opacity: 0.13;
+  padding: 0.31vw;
+}
+.flake:nth-child(116) {
+  animation: snow 20s linear 35s infinite normal backwards;
+  left: 62%;
+  opacity: 0.21;
+  padding: 0.46vw;
+}
+.flake:nth-child(117) {
+  animation: snow 12s linear 14s infinite normal backwards;
+  left: 63%;
+  opacity: 0.14;
+  padding: 0.34vw;
+}
+.flake:nth-child(118) {
+  animation: snow 18s linear 14s infinite normal backwards;
+  left: 49%;
+  opacity: 0.85;
+  padding: 0.11vw;
+}
+.flake:nth-child(119) {
+  animation: snow 16s linear 27s infinite normal backwards;
+  left: 85%;
+  opacity: 0.78;
+  padding: 0.4vw;
+}
+.flake:nth-child(120) {
+  animation: snow 13s linear 27s infinite normal backwards;
+  left: 64%;
+  opacity: 0.18;
+  padding: 0.19vw;
+}
+.flake:nth-child(121) {
+  animation: snow 19s linear 4s infinite normal backwards;
+  left: 35%;
+  opacity: 0.32;
+  padding: 0.14vw;
+}
+.flake:nth-child(122) {
+  animation: snow 18s linear 50s infinite normal backwards;
+  left: 35%;
+  opacity: 1.02;
+  padding: 0.38vw;
+}
+.flake:nth-child(123) {
+  animation: snow 12s linear 7s infinite normal backwards;
+  left: 16%;
+  opacity: 1.1;
+  padding: 0.42vw;
+}
+.flake:nth-child(124) {
+  animation: snow 16s linear 15s infinite normal backwards;
+  left: 10%;
+  opacity: 0.25;
+  padding: 0.19vw;
+}
+.flake:nth-child(125) {
+  animation: snow 20s linear 12s infinite normal backwards;
+  left: 71%;
+  opacity: 0.64;
+  padding: 0.37vw;
+}
+.flake:nth-child(126) {
+  animation: snow 15s linear 14s infinite normal backwards;
+  left: 33%;
+  opacity: 0.39;
+  padding: 0.25vw;
+}
+.flake:nth-child(127) {
+  animation: snow 18s linear 36s infinite normal backwards;
+  left: 44%;
+  opacity: 0.38;
+  padding: 0.5vw;
+}
+.flake:nth-child(128) {
+  animation: snow 16s linear 4s infinite normal backwards;
+  left: 40%;
+  opacity: 0.61;
+  padding: 0.4vw;
+}
+.flake:nth-child(129) {
+  animation: snow 11s linear 5s infinite normal backwards;
+  left: 81%;
+  opacity: 0.53;
+  padding: 0.2vw;
+}
+.flake:nth-child(130) {
+  animation: snow 15s linear 14s infinite normal backwards;
+  left: 44%;
+  opacity: 0.9;
+  padding: 0.37vw;
+}
+.flake:nth-child(131) {
+  animation: snow 16s linear 7s infinite normal backwards;
+  left: 68%;
+  opacity: 0.47;
+  padding: 0.38vw;
+}
+.flake:nth-child(132) {
+  animation: snow 15s linear 36s infinite normal backwards;
+  left: 94%;
+  opacity: 0.46;
+  padding: 0.36vw;
+}
+.flake:nth-child(133) {
+  animation: snow 13s linear 25s infinite normal backwards;
+  left: 8%;
+  opacity: 0.64;
+  padding: 0.43vw;
+}
+.flake:nth-child(134) {
+  animation: snow 19s linear 38s infinite normal backwards;
+  left: 71%;
+  opacity: 0.97;
+  padding: 0.35vw;
+}
+.flake:nth-child(135) {
+  animation: snow 20s linear 48s infinite normal backwards;
+  left: 91%;
+  opacity: 1;
+  padding: 0.29vw;
+}
+.flake:nth-child(136) {
+  animation: snow 13s linear 42s infinite normal backwards;
+  left: 17%;
+  opacity: 0.91;
+  padding: 0.42vw;
+}
+.flake:nth-child(137) {
+  animation: snow 16s linear 41s infinite normal backwards;
+  left: 34%;
+  opacity: 0.94;
+  padding: 0.28vw;
+}
+.flake:nth-child(138) {
+  animation: snow 18s linear 22s infinite normal backwards;
+  left: 82%;
+  opacity: 0.27;
+  padding: 0.38vw;
+}
+.flake:nth-child(139) {
+  animation: snow 13s linear 22s infinite normal backwards;
+  left: 51%;
+  opacity: 0.43;
+  padding: 0.5vw;
+}
+.flake:nth-child(140) {
+  animation: snow 19s linear 22s infinite normal backwards;
+  left: 54%;
+  opacity: 0.89;
+  padding: 0.41vw;
+}
+.flake:nth-child(141) {
+  animation: snow 16s linear 31s infinite normal backwards;
+  left: 54%;
+  opacity: 0.46;
+  padding: 0.12vw;
+}
+.flake:nth-child(142) {
+  animation: snow 11s linear 49s infinite normal backwards;
+  left: 8%;
+  opacity: 0.75;
+  padding: 0.29vw;
+}
+.flake:nth-child(143) {
+  animation: snow 15s linear 1s infinite normal backwards;
+  left: 63%;
+  opacity: 0.3;
+  padding: 0.29vw;
+}
+.flake:nth-child(144) {
+  animation: snow 18s linear 26s infinite normal backwards;
+  left: 46%;
+  opacity: 0.98;
+  padding: 0.43vw;
+}
+.flake:nth-child(145) {
+  animation: snow 12s linear 29s infinite normal backwards;
+  left: 87%;
+  opacity: 0.31;
+  padding: 0.33vw;
+}
+.flake:nth-child(146) {
+  animation: snow 16s linear 1s infinite normal backwards;
+  left: 37%;
+  opacity: 0.42;
+  padding: 0.13vw;
+}
+.flake:nth-child(147) {
+  animation: snow 17s linear 45s infinite normal backwards;
+  left: 38%;
+  opacity: 0.3;
+  padding: 0.44vw;
+}
+.flake:nth-child(148) {
+  animation: snow 19s linear 35s infinite normal backwards;
+  left: 65%;
+  opacity: 0.77;
+  padding: 0.21vw;
+}
+.flake:nth-child(149) {
+  animation: snow 16s linear 18s infinite normal backwards;
+  left: 43%;
+  opacity: 0.14;
+  padding: 0.37vw;
+}
+.flake:nth-child(150) {
+  animation: snow 14s linear 26s infinite normal backwards;
+  left: 46%;
+  opacity: 0.5;
+  padding: 0.5vw;
+}
+@keyframes snow {
+  4% {
+    transform: translate(0.4vw, 4vh);
+  }
+  8% {
+    transform: translate(-0.2vw, 8vh);
+  }
+  12% {
+    transform: translate(0.4vw, 12vh);
+  }
+  16% {
+    transform: translate(0.4vw, 16vh);
+  }
+  20% {
+    transform: translate(-0.4vw, 20vh);
+  }
+  24% {
+    transform: translate(0.4vw, 24vh);
+  }
+  28% {
+    transform: translate(-0.2vw, 28vh);
+  }
+  32% {
+    transform: translate(0.4vw, 32vh);
+  }
+  36% {
+    transform: translate(0.4vw, 36vh);
+  }
+  40% {
+    transform: translate(-0.4vw, 40vh);
+  }
+  44% {
+    transform: translate(0.4vw, 44vh);
+  }
+  48% {
+    transform: translate(-0.2vw, 48vh);
+  }
+  52% {
+    transform: translate(0.4vw, 52vh);
+  }
+  56% {
+    transform: translate(0.4vw, 56vh);
+  }
+  60% {
+    transform: translate(-0.4vw, 60vh);
+  }
+  64% {
+    transform: translate(0.4vw, 64vh);
+  }
+  68% {
+    transform: translate(-0.2vw, 68vh);
+  }
+  72% {
+    transform: translate(0.4vw, 72vh);
+  }
+  76% {
+    transform: translate(0.4vw, 76vh);
+  }
+  80% {
+    transform: translate(-0.4vw, 80vh);
+  }
+  84% {
+    transform: translate(0.4vw, 84vh);
+  }
+  88% {
+    transform: translate(-0.2vw, 88vh);
+  }
+  92% {
+    transform: translate(0.4vw, 92vh);
+  }
+  96% {
+    transform: translate(0.4vw, 96vh);
+  }
+  100% {
+    transform: translate(-0.4vw, 100vh);
+  }
+  100% {
+    opacity: 0;
+  }
+}

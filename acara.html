@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/img/wedding-ring.png" rel="shortcut icon">
+    <title>Wedding Mira Hermanika S.I.P & Ceceng Ramdani S.I.Kom</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css?v2.8">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <audio id="backsound" autoplay loop>
+        <source src="assets/audio/ada-untukmu.mp3" type="audio/mp3">
+    </audio>
+    </head>
+
+    <body>
+
+        <nav class="nav">
+            <a href="index.html" class="nav__link">
+                <i class="material-icons nav__icon">email</i>
+                <span class="nav__text">Home</span>
+            </a>
+            <a href="mempelai.html" class="nav__link">
+                <i class="material-icons nav__icon">supervised_user_circle</i>
+                <span class="nav__text">Mempelai</span>
+            </a>
+            <a href="acara.html" class="nav__link nav__link--active">
+                <i class="material-icons nav__icon">event_note</i>
+                <span class="nav__text">Acara</span>
+            </a>
+            <a href="tempat.html" class="nav__link">
+                <i class="material-icons nav__icon">location_on</i>
+                <span class="nav__text">Tempat</span>
+            </a>
+            <a href="galery.html" class="nav__link">
+                <i class="material-icons nav__icon">image</i>
+                <span class="nav__text">Galery</span>
+            </a>
+            <!-- <a href="#" class="nav__link sound">
+                <i class="material-icons nav__icon" id="icon_music">music_note</i>
+                <span class="nav__text">Musik</span>
+            </a> -->
+        </nav>
+
+        <div class="container">
+            <img src="assets/img/kanan.png" class="img-kanan" alt="">
+            <img src="assets/img/kiri.png" class="img-kiri" alt="">
+
+            <div class="text-judul-acara">
+                <h1>Rangkaian Acara</h1>
+            </div>
+            <div class="container-acara">
+                <div class="row">
+                    <div class="col-md-12 col-lg-6">
+                        <div class="card-acara">
+                            <h4 class="judul-card-acara">Akad Nikah</h4>
+                            <h6 class="judul-card-acara-detail">(Keluarga, saudara atau kerabat terdekat)</h6>
+                            <h6 class="judul-card-acara-detail">Dresscode bernuansa putih</h6>
+                            <hr>
+                            <table class="acara-detail" style="width: 100%;">
+                                <tr>
+                                    <td>
+                                        <span class="material-icons">
+                                            apartment
+                                        </span>
+                                    </td>
+                                    <td>:</td>
+                                    <td>Hotel Charaka <br>Jl. Raya Cianjur - Sukabumi Km. 9, Bangbayang, Gekbrong, Songgom, Kec. Gekbrong, Kabupaten Cianjur, Jawa Barat 43261</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="material-icons">
+                                            event
+                                        </span>
+                                    </td>
+                                    <td>:</td>
+                                    <td>Minggu, 06 Februari 2022</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="material-icons">
+                                            schedule
+                                        </span>
+                                    </td>
+                                    <td>:</td>
+                                    <td>09.00 WIB - selesai</td>
+                                </tr>
+                            </table>
+                            <hr>
+                            <h5 id="cd-akad">Loading...</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-6 akad">
+                        <div class="card-acara">
+                            <h4 class="judul-card-acara">Resepsi Pernikahan</h4>
+                            <hr>
+                            <table class="acara-detail" style="width: 100%;">
+                                <tr>
+                                    <td>
+                                        <span class="material-icons">
+                                            apartment
+                                        </span>
+                                    </td>
+                                    <td>:</td>
+                                    <td>Hotel Charaka <br>Jl. Raya Cianjur - Sukabumi Km. 9, Bangbayang, Gekbrong, Songgom, Kec. Gekbrong, Kabupaten Cianjur, Jawa Barat 43261</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="material-icons">
+                                            event
+                                        </span>
+                                    </td>
+                                    <td>:</td>
+                                    <td>Minggu, 06 Februari 2022</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="material-icons">
+                                            schedule
+                                        </span>
+                                    </td>
+                                    <td>:</td>
+                                    <td>11.00 WIB - selesai</td>
+                                </tr>
+                            </table>
+                            <hr>
+                            <h5 id="cd-resepsi">Loading...</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="modal-safety" data-toggle="modal" data-target="#safety">
+            <div class="safety-card">
+                <span class="material-icons">
+                    health_and_safety
+                </span>
+            </div>
+        </button>
+
+        <button class="modal-music">
+            <div class="music-card">
+                <span class="material-icons sound"  id="icon_music">
+                    music_note
+                </span>
+            </div>
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="safety" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">To our dearest guest</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="text-center text-color">
+                                use health protocol such as
+                                <div class="row text-color">
+                                    <div class="col-6 col-md-3 mt-3">
+                                        <img src="assets/img/safety/protection-mask.png" alt="" class="img-fluid">
+                                        Wear Mask
+                                    </div>
+                                    <div class="col-6 col-md-3 mt-3">
+                                        <img src="assets/img/safety/soap.png" alt="" class="img-fluid">
+                                        Wash Your Hand
+                                    </div>
+                                    <div class="col-6 col-md-3 mt-3">
+                                        <img src="assets/img/safety/disinfectant.png" alt="" class="img-fluid">
+                                        Bring Antiseptic
+                                    </div>
+                                    <div class="col-6 col-md-3 mt-3">
+                                        <img src="assets/img/safety/social.png" alt="" class="img-fluid">
+                                        social Distancing
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- salju -->
+        <div class='snow-flakes'>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+            <div class='flake'></div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+
+        <script type="text/javascript">
+            var myAudio = document.getElementById("backsound");
+            var isPlaying = false;
+
+            $(".modal-music").on("click", function () {
+                isPlaying ? myAudio.pause() : myAudio.play();
+            })
+
+            myAudio.onplaying = function () {
+                isPlaying = true;
+                document.getElementById("icon_music").innerHTML = "music_note";
+            };
+
+            myAudio.onpause = function () {
+                isPlaying = false;
+                document.getElementById("icon_music").innerHTML = "music_off";
+            };
+
+            // Set the date we're counting down to
+            var jadwal_akad = new Date("February 06, 2022 09:00:00").getTime();
+            var jadwal_resepsi = new Date("February 06, 2022 11:00:00").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+
+                // Get today's date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now and the count down date
+                var distance_akad = jadwal_akad - now;
+                var distance_resepsi = jadwal_resepsi - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days_akad = Math.floor(distance_akad / (1000 * 60 * 60 * 24));
+                var hours_akad = Math.floor((distance_akad % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes_akad = Math.floor((distance_akad % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds_akad = Math.floor((distance_akad % (1000 * 60)) / 1000);
+
+                var days_resepsi = Math.floor(distance_resepsi / (1000 * 60 * 60 * 24));
+                var hours_resepsi = Math.floor((distance_resepsi % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes_resepsi = Math.floor((distance_resepsi % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds_resepsi = Math.floor((distance_resepsi % (1000 * 60)) / 1000);
+
+                // Display the result in the element with id="demo"
+                document.getElementById("cd-akad").innerHTML = days_akad + "d " + hours_akad + "h " + minutes_akad + "m " + seconds_akad + "s left";
+                document.getElementById("cd-resepsi").innerHTML = days_resepsi + "d " + hours_resepsi + "h " + minutes_resepsi + "m " + seconds_resepsi + "s left";
+
+                // If the count down is finished, write some text
+                if (distance_akad < 0) {
+                    clearInterval(x);
+                    document.getElementById("cd-akad").innerHTML = "Acara Sudah Selesai";
+                }
+                if (distance_resepsi < 0) {
+                    clearInterval(x);
+                    document.getElementById("cd-resepsi").innerHTML = "Acara Sudah Selesai";
+                }
+            }, 1000);
+        </script>
+    </body>
+
+</html>
