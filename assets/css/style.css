@@ -48,13 +48,13 @@ body {
 }
 
 .nav__link:hover {
-  background-color: #FFFFFF;
+  background-color: #B8860B;
   text-decoration: none;
   color: #fff;
 }
 
 .nav__link--active {
-  background-color: #FFFFFF;
+  background-color: #B8860B;
   text-decoration: none;
   color: #fff;
 }
