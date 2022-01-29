@@ -48,13 +48,13 @@ body {
 }
 
 .nav__link:hover {
-  background-color: #B8860B;
+  background-color: #FFFFFF;
   text-decoration: none;
   color: #fff;
 }
 
 .nav__link--active {
-  background-color: #B8860B;
+  background-color: #FFFFFF;
   text-decoration: none;
   color: #fff;
 }
@@ -88,7 +88,7 @@ body {
   height: 50px;
   bottom: 70px;
   right: 75px;
-  color: #B8860B;
+  color: #FFFFFF;
 }
 
 .modal-music:hover span {
@@ -127,7 +127,7 @@ body {
   height: 50px;
   bottom: 70px;
   right: 15px;
-  color: #B8860B;
+  color: #FFFFFF;
 }
 
 .modal-safety:hover span {
@@ -157,11 +157,11 @@ body {
 }
 
 .modal-title {
-  color: #B8860B;
+  color: #FFFFFF;
 }
 
 .text-color {
-  color: #B8860B;
+  color: #FFFFFF;
 }
 /* home page */
 
@@ -200,13 +200,13 @@ body {
 
 .container .kartu-nama .nama h5 {
   margin-top: 20px;
-  color: #B8860B;
+  color: #FFFFFF;
   z-index: 1;
 }
 
 .container .kartu-nama .nama h4 {
   font-family: "Dancing Script", cursive;
-  color: #B8860B;
+  color: #FFFFFF;
   z-index: 1;
 }
 
@@ -252,7 +252,7 @@ body {
 
 .text-atas {
   text-align: center;
-  color: #B8860B;
+  color: #FFFFFF;
 }
 
 .nama-mempelai {
@@ -271,7 +271,7 @@ body {
 }
 
 .container-mempelai .data-mempelai .ket-mempelai {
-  color: #B8860B;
+  color: #FFFFFF;
 }
 
 .img-mempelai {
@@ -281,7 +281,7 @@ body {
 .text-dengan {
   margin: 0 auto;
   font-family: "Dancing Script", cursive;
-  color: #B8860B;
+  color: #FFFFFF;
 }
 
 .text-dengan {
@@ -315,22 +315,22 @@ body {
 
 .text-judul-acara h1 {
   font-family: "Dancing Script", cursive;
-  color: #B8860B;
+  color: #FFFFFF;
   margin-top: 60px;
   z-index: 9;
 }
 
 .judul-card-acara {
-  color: #B8860B;
+  color: #FFFFFF;
   margin-top: 5px;
 }
 
 .judul-card-acara-detail {
-  color: #B8860B;
+  color: #FFFFFF;
 }
 
 .card-acara h5 {
-  color: #B8860B;
+  color: #FFFFFF;
 }
 
 .acara-detail {
@@ -339,7 +339,7 @@ body {
 }
 
 .acara-detail td {
-  color: #B8860B;
+  color: #FFFFFF;
   text-align: left;
   vertical-align: top;
 }
@@ -365,7 +365,7 @@ body {
 /* page galery */
 
 .tempat-judul {
-  color: #B8860B;
+  color: #FFFFFF;
 }
 
 #map {
@@ -399,7 +399,7 @@ body {
 
   .container .kartu-nama .nama h5 {
     font-size: 1.4rem;
-    color: #B8860B;
+    color: #FFFFFF;
     z-index: 1;
     margin-top: 15px;
   }
